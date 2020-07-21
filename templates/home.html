@@ -1,0 +1,15 @@
+<header>
+    <h1> ---- WORD COUNT ---- </h1>
+</header>
+<div class="menu" >
+    <a href="{% url 'contact' %}">Contact</a> 
+    <a href="#news">NEWS</a> 
+
+</div>
+
+<form action= "{% url 'count' %} ">
+    <textarea cols="60" rows="20" name="fullText"> </textarea>
+    <br/> <br/>
+    <input type="submit" value="Count !"/>
+    
+</form>

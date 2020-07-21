@@ -1,0 +1,18 @@
+<h1> COUNT THEM ALL ! </h1>
+
+<a href="{% url 'home'%}" > Count New Text </a>
+
+<h2> There are {{wordcount}} words in the text</h2>
+<br/>
+<h2> Your Text : </h2>
+<h3>
+{{ text }}
+</h3>
+
+<h2> Word Count </h2>
+{% for word, count in wordDict  %}
+<h4>
+{{ word }} : {{ count }}
+<br/>
+</h4>
+{% endfor %}
